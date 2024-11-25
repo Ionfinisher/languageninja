@@ -1,0 +1,64 @@
+:root {
+  --color: #111827;
+  --color-shade-1: #222222;
+  --color-shade-2: #eff5ff;
+  --brand-color: #ef4444;
+  --background-color: #ffffff;
+  --headline1-font-size: 29px;
+  --headline2-font-size: 16px;
+  --headline1-margin: 10px 40px;
+  --border-radius: 6px;
+  --font-size: 14px;
+  --item-height: 36px;
+  --link-color: #ef4444;
+  --divider-padding: 0 15px;
+}
+
+hanko-auth {
+  --container-max-width: 640px;
+  --container-padding: 40px;
+}
+
+hanko-profile {
+  --container-max-width: 550px;
+  --container-padding: 30px;
+}
+
+/* hanko-profile::part(container) {
+  border: solid 1px #d8dee3;
+  border-radius: 6px;
+} */
+
+hanko-auth::part(button):hover {
+  background-color: #ef4444;
+  border: #ef4444 solid 1px;
+  box-shadow: 0 4px 6px rgba(206, 87, 43, 0.1);
+}
+
+hanko-auth::part(headline1),
+hanko-profile::part(headline1),
+hanko-auth::part(headline2),
+hanko-profile::part(headline2) {
+  color: #ef4444;
+  line-height: 36px;
+  text-align: center;
+}
+
+hanko-auth::part(form-item) {
+  min-width: 100%;
+}
+
+hanko-auth::part(input),
+hanko-profile::part(input) {
+  background-color: #ffffff;
+  margin-bottom: 12px;
+}
+
+hanko-auth::part(secondary-button) {
+  border-color: var(--brand-color--);
+}
+
+hanko-auth::part(divider) {
+  margin: 24px 0;
+  color: var(--brand-color);
+}

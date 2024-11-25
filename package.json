@@ -1,0 +1,41 @@
+{
+  "name": "languageninja",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@radix-ui/react-avatar": "^1.1.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@teamhanko/hanko-elements": "^1.2.0",
+    "@tsparticles/engine": "^3.6.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.6.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "firebase": "^11.0.2",
+    "framer-motion": "^11.11.17",
+    "jose": "^5.9.6",
+    "lucide-react": "^0.460.0",
+    "mini-svg-data-uri": "^1.4.4",
+    "next": "14.2.15",
+    "openai": "^4.73.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^9.0.1",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
