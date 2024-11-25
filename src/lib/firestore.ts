@@ -7,7 +7,7 @@ export const saveCourse = async (course: Course) => {
     const courseRef = await addDoc(collection(db, "courses"), course);
     return courseRef.id;
   } catch (error) {
-    console.error("Error saving course:", error);
+    // console.error("Error saving course:", error);
     throw new Error("Failed to save course.");
   }
 };
@@ -27,7 +27,7 @@ export const getCourses = async (userid: string) => {
       )
       .filter((course) => course.userid === userid);
   } catch (error) {
-    console.error("Error fetching courses:", error);
+    // console.error("Error fetching courses:", error);
     throw new Error("Failed to fetch courses.");
   }
 };
@@ -48,7 +48,7 @@ export const getCourseById = async (
       ...courseSnapshot.data(),
     } as Course;
   } catch (error) {
-    console.error("Error fetching course:", error);
+    // console.error("Error fetching course:", error);
     throw new Error("Failed to fetch course");
   }
 };

@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Cover } from "@/components/ui/cover";
 import Link from "next/link";
-import { Brain, Target, Zap } from "lucide-react";
 
 import React from "react";
 import { features } from "@/featuresData";

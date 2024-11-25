@@ -1,10 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import LoadingScreen from "@/components/loadingScreen";
 import Header from "@/components/header";
-import { getLocalStorage, setLocalStorage } from "@/lib/localStorage";
-import { useUserData } from "@/hooks/useUserData";
+import { getLocalStorage } from "@/lib/localStorage";
 import { useRouter } from "next/navigation";
 
 export default function CreateCourse() {
@@ -25,8 +24,6 @@ export default function CreateCourse() {
     e.preventDefault();
     setIsLoading(true);
 
-    // await new Promise((resolve) => setTimeout(resolve, 5000));
-
     if (input.trim() !== "" && userid !== "") {
       const res = await fetch("/api/generate-learning-content", {
         method: "POST",
@@ -35,7 +32,6 @@ export default function CreateCourse() {
         },
         body: JSON.stringify({ topic: input, userid }),
       });
-      //   const response = await res.json();
       if (res.status === 200) {
         const data = await res.json();
         setIsLoading(false);
@@ -43,7 +39,7 @@ export default function CreateCourse() {
       } else {
         setIsLoading(false);
         setIsError(true);
-        console.error("Error creating course:", res.statusText);
+        // console.error("Error creating course:", res.statusText);
       }
     } else {
       setIsLoading(false);
