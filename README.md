@@ -46,7 +46,7 @@ Language Ninja provides:
 ## **How It Works**
 
 1. **Sign Up:** Start by signing up with an email.
-2. **Create a course:** Enter a prompt Ex: I'm going on a trip to Japan for my honey moon and let the training begin.
+2. **Create a course:** Enter a prompt Ex: I'm going on a trip to Japan for my honey moon. And let the training begin.
 3. **Take the lesson:** Learn the basics quickly with the personnalized course generated.
 4. **Test your knowledge:** Take the quiz from the course and improve in a fun way.
 
